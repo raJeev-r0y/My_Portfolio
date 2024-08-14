@@ -42,14 +42,15 @@
                 <div class="home__data">
                     <h1 class="home__title">Hello,<br>My name is  <span class="home__title-color">SUGATA</span><br> </h1>
 
-                    <a href="https://drive.google.com/file/d/1C9UoapJBWA0Tc0zlxHw0xUgb2HTJqUTr/view?usp=sharing" class="button"><abba title="click to visit">RESUME</abba> </a>
+                    <a href="https://drive.google.com/file/d/1HwL9ETPJLj1UbJlJCylRZZt2brIZlpb4/view?usp=sharing" class="button"><abba title="click to visit">RESUME</abba> </a>
                 </div>
 
                 <div class="home__social">
 
                     <a href="https://linkedin.com/in/sugata-roy-15b4b825b" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="https://github.com/raJib-R0Y" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href=" " class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    
                 </div>
 
                 <div class="home__img">
@@ -59,7 +60,7 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="-25" href="assets/img/perfil.png"/>
+                            <image class="home__blob-img" x="50" y="22.5" href="assets/img/prefil.png"/>
                         </g>
                     </svg>
                 </div>
@@ -71,7 +72,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/hii.png" alt="">
                     </div>
                     
                     <div>
@@ -252,11 +253,22 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="send" class="contact__button button">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                       <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="cc081796-cb1f-47dc-bf99-f7cbe7fd8be7">
+                        <!-- Form Inputs. Each input must have a name="" attribute -->
+                        <input type="text" placeholder="Name" class="contact__input"required>
+                        <input type="mail" placeholder="Email" class="contact__input"required>
+
+                        <textarea name="message"  cols="0" rows="10" class="contact__input" required></textarea>
+
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <!-- Custom Confirmation / Success Page -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                        <button type="submit" class="contact__button button">Submit </button>
                     </form>
                 </div>
             </section>
